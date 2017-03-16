@@ -22,6 +22,8 @@
                 flex-direction: column;
                 height:100%;
                 position:relative;
+                max-width:900px;
+
 
             }
             .main-header, .main-footer{
@@ -35,10 +37,12 @@
             }
             .main-content {
                 flex:1;
-                background-color: antiquewhite;
+                background-color:#a51b09;
                 margin-bottom: 100px;
                 border-bottom-left-radius:20px;
                 border-bottom-right-radius:20px;
+                background-image: url('./image/columns_bg.jpg');
+                background-position-y: 424px;background-repeat: no-repeat;
             }
             .main-sidebar{
               
@@ -51,10 +55,9 @@
                 
                 width:70%;
                
-                position:absolute;
+                float:right;
                 left:30%;
                 flex:1;
-                height:200px;
 
             }
             .main-header ul{
@@ -76,6 +79,7 @@
             nav.main-nav ul{
                 list-style-type:none;
                 background-color: #cc0000;
+                color:#fff;
             }
             nav.main-nav li{
                 
@@ -107,7 +111,7 @@
             }
             .main-sidebar ul li:lastchild {
                 list-style-type: none;
-                border-bottom-left-radius: 20px;
+               
             }
             .main-sidebar a{
                 color:#fff;
@@ -134,7 +138,7 @@
                 display: inline-block;
                 margin:0 5px;
             }
-            ul.social-icons li img {
+            ul.social-icons  img {
                 width:50px;
             }
             .bottom-links li{
@@ -159,19 +163,48 @@
            ul.main-subnav li{
                 width:100% !important;
             }
-            .content-right{
-                background-color: #e44c4c;
-                height: 250px;
+            
+            .content-inner-right {
+                width:46%;
+                flex:1;
+               float:right;
+                padding:2%;
             }
-            .content-right-right ul, .content-right-left ul {
+            .content-inner-left {
+                width:46%;
+                flex:1;
+                padding:2%;
+               
+            }
+            .left-content-links{
                 list-style-type: none;
+
             }
-            .content-right-right ul li:last-child {
-                float:left;
-            }
-            .content-right-right ul a, .content-right-left ul a {
+            .left-content-links li{
+                margin:15px 0;
                 color:#fff;
-                
+            }
+            .left-content-links a{
+                color:#fff;
+            }
+            
+            footer p{
+                text-align: center;
+                color:#fff;
+                margin:15px 0 0 7px;
+            }
+            ul.bottom-icon img {
+                width:150px !important;
+                margin-top:20px;
+            }
+            .white-text{
+                color:#fff;
+            }
+            .body-h1{
+                margin:15px 0;
+            }
+            .center-txt {
+                text-align: center;
             }
         </style>
     </head>
@@ -279,44 +312,46 @@
                     </ul>
                 </aside>
                 <div class="content-right">
-                    <div class="content-right-right">
-                        <ul>
+                    <div class="content-inner-right">
+                        <ul class="left-content-links center-txt" >
+                            <li><a href="#">Canvas has replace</a></li>
+                            <li><a href="#">blackboard</a></li>
+                            <li><a href="#">instruction</a></li>
+                            
+                         </ul>   
+                        <div class="white-text">
+                            <h1 class="body-h1">In The News</h1>
+                            <p>FCC Hosts Well-Reputed Deaf Performance Artist Peter S. Cook</p>
+                            <p>FCC to host City Jazz Festival</p>
+                            <p>Inaugural Journalism Day Conference to be held at FCC</p>
+                            <p>Earn Money by Testing</p>
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="content-inner-left">
+                        <ul class="left-content-links">
                             <li><a href="#">Email, WebAdvisor, & Canvas login steps</a></li>
                             <li><a href="#">Questions about changes to DACA?</a></li>
                             <li><a href="#">Request a Transcript</a></li>
-                            <li><a href="#">Calendar of Events</a></li>
-                            <li><a href="#">Pool Table Tournament</a>
-                               <p>3/7/2017</p>
-                                <p>11:30 AM - 1:00 PM </p>
-                            </li>
-
-                            <li><a href="#">FCC Womens Softball vs Poterville College</a>
-                                <p>3/7/2017</p>
-                                <p>2:00 PM </p>
-                            </li>
-                            <li><a href="#">FCC Men's Baseball vs Cerro Coso</a>
-                                <p>3/7/2017</p>
-                                <p>3:00 PM </p>                            
-                            </li>
-                            <li><a href="#">FCC Theatre Festival</a>
-                                <p>3/7/2017</p>
-                                <p>8:00 AM - 4:00 PM </p>
-                            </li>
-                            <li><a href="#">More Event >></a>
-
+                    
                         </ul>
+                        <div class="white-text">
+                            <h1 class="body-h1">Calendar of Events</h1>
+                            <p>Spring Vendor Fair</p>
+                            <p>3/14/2017 - 3/16/2017</p>
+                            <p>Dr. Neil Shubin</p>
+                            <p>3/15/2017</p>
+                            <p>12:00 PM</p>
+                            <p>FCC Concert Band</p>
+                            <p>3/15/2017</p>
+                            <p>7:30 PM</p>
+                            <p>Careers and Majors: Tools and Tips</p>
+                            <p>3/16/2017</p>
+                            <p>9:00 AM - 10:00 AM</p>
+                        </div>
                     </div>
-                    <div class="content-right-left">
-                        <ul>
-                            <li><a href="#">Earn Money by Testing</a></li>
-                            <li><a href="#">Art Space Gallery Features “Apparently Random” Exhibit</a></li>
-                            <li><a href="#">FCC Theatre presents Dr. Seuss’ The Cat in The Hat</a></li>
-                            <li><a href="#">FCC Collaborative Effort will Help Brighten Children’s Smiles!</a></li>
-                            
-                            <li><a href="#">More Event >></a>
-
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
             <footer class="main-footer">
@@ -340,6 +375,20 @@
                     <li><a href="#">Link1</a><span class="divider">|</span></li>
                     <li><a href="#">Link1</a></li>
                 </ul>
+                <ul class="social-icons bottom-icon">
+                    <li><img src="./image/bottom1.jpg" alt="image1"></li>
+                    <li><img src="./image/bottom2.gif" alt="image1"></li>
+                </ul>
+                <ul class="bottom-links">
+                    <li><a href="#">Link1</a><span class="divider">|</span></li>
+                    <li><a href="#">Link1</a><span class="divider">|</span></li>
+                    <li><a href="#">Link1</a><span class="divider">|</span></li>
+                    <li><a href="#">Link1</a><span class="divider">|</span></li>
+                    <li><a href="#">Link1</a><span ></span></li> 
+                </ul>
+                <p>Fresno City College - 1101 E. University Avenue Fresno, Ca. 93741.  (559) 442-4600</p>
+                <p>(c)2017  State Center Community College District. All Rights Reserved.   </p>
+                <p>This site meets Section 508 Accessibility Standards. Technical Assistance: Help Desk. System errors: Webmaster. Campus Information: Contact Us, Terms of Use and Privacy Policy</p>
             </footer>
         </div>
     </body>
